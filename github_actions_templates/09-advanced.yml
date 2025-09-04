@@ -1,0 +1,8 @@
+name: Advanced Features
+on: [push]
+jobs:
+  conditional-deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying only from main branch"
