@@ -1,8 +1,7 @@
 #Practice code
 name: Hello world
 on: [push]
-jobs: 
-  Hello:
+jobs:
   runs-on: ubuntu-latest
   steps:
     - name: Print Hello
