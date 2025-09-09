@@ -1,8 +1,12 @@
 #Practice code
-name: Hello world
-on: [push]
+name: Hello Github 
+on: push
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Print Hello
-      run: echo "Hello from Github Actions"
+  hello_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Print Hello
+        run: echo "Hello from Github Actions"
